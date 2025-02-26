@@ -1,0 +1,11 @@
+QuickSort
+Runtime on test 1: 51.007900 ms. Double-check by std::sort on test 1: True
+Runtime on test 2: 55.949300 ms. Double-check by std::sort on test 2: True
+Runtime on test 3: 233.760000 ms. Double-check by std::sort on test 3: True
+Runtime on test 4: 223.776100 ms. Double-check by std::sort on test 4: True
+Runtime on test 5: 220.340900 ms. Double-check by std::sort on test 5: True
+Runtime on test 6: 207.513200 ms. Double-check by std::sort on test 6: True
+Runtime on test 7: 229.198600 ms. Double-check by std::sort on test 7: True
+Runtime on test 8: 229.104600 ms. Double-check by std::sort on test 8: True
+Runtime on test 9: 215.325900 ms. Double-check by std::sort on test 9: True
+Runtime on test 10: 226.891700 ms. Double-check by std::sort on test 10: True
