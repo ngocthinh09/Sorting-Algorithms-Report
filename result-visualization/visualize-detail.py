@@ -14,15 +14,15 @@ colors = ['#0072B2', '#D55E00', '#009E73', '#F0E442', '#CC79A7']
 x = np.arange(len(category))
 bar_width = 0.15
 
-(figure, axes) = plt.subplots(2, 1, figsize = (14, 11))
+(figure, axes) = plt.subplots(2, 1, figsize = (14, 12))
 plt.rc('font', family = 'Times New Roman', size = 13)
-plt.suptitle("Kết quả thử nghiệm trên bộ dữ liệu", fontsize = 20, fontweight = 'bold')
+plt.suptitle("Kết quả thử nghiệm trên bộ dữ liệu", fontsize = 25, fontweight = 'bold')
 
 for row in range(2):
     ax = axes[row]
     (start, end) = (0, 5) if (row == 0) else (5, 10)
     for i in range(len(category)):
-        bars = ax.bar(x + i*bar_width, runtime[i][start:end:], bar_width, label = category[i], color = colors[i])
+        bars = ax.bar(x + i*bar_width, runtime[i][start:end:], bar_width, label = category[i], color = colors[i], alpha = 0.9)
         for bar in bars:
             height = bar.get_height()
             ax.text(bar.get_x() + bar_width/2, height, f"{height:.1f}", ha = "center", va = "bottom", fontsize = 10)
@@ -33,5 +33,5 @@ for row in range(2):
     ax.set_ylabel("Thời gian thực hiện (ms)", fontsize = 13)
     ax.legend(fontsize = 8)
 
-plt.savefig("img/bar-chart-runtime.png", dpi = 300, bbox_inches='tight')
+plt.savefig("img/bar-chart-runtime.png", dpi = 600, bbox_inches='tight')
 plt.show()
